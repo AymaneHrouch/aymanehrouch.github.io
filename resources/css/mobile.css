@@ -16,12 +16,10 @@
   margin-left: 0;
 }
 
-.progress-bar {
-  display: flex;
-}
-
-.progress-bar progress {
-  margin-right: 1rem;
+#about .skills,
+#about .whoAmI {
+  flex: 1;
+  padding: 1rem 1rem;
 }
 
 #contact .contact-infos {

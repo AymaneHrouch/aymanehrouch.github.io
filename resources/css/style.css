@@ -136,9 +136,13 @@ h4 {
   display: flex;
 }
 
-#about div {
+#about .skills,
+#about .whoAmI {
   flex: 1;
+  padding: 1rem 2rem;
 }
+
+/* who is this guy */
 
 .whoAmI {
   display: flex;
@@ -158,6 +162,9 @@ img {
   margin: 1rem 0;
 }
 
+/* SKILLS  */
+
+
 .skill p:last-child {
   display: inline;
 }
@@ -167,13 +174,14 @@ img {
   margin: 0;
 }
 
-#about div {
-  padding: 0.2rem 2rem;
+
+.progress-bar {
+  display: flex;
 }
 
-progress {
-  margin: 0;
+.progress-bar progress {
   width: 90%;
+  margin-right: 1rem;
 }
 
 /* CONTACT */
