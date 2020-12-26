@@ -29,12 +29,13 @@ header .text {
 }
 
 header {
+  position: relative;
   color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("img/bg.jpg");
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 95vh;
   overflow: hidden;
 }
 
@@ -44,6 +45,11 @@ header .text h1 {
 
 .and {
   color: #b7b7b7;
+}
+
+.resume-btn {
+  position: absolute;
+  bottom: 10px;
 }
 
 /* NAVBAR */
@@ -92,11 +98,6 @@ p {
   word-spacing: 1px;
   letter-spacing: 0.5px;
   margin-bottom: 0.5rem;
-}
-
-.resume-btn {
-  position: absolute;
-  bottom: 10px;
 }
 
 .btn:hover {
