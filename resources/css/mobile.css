@@ -7,14 +7,13 @@
   flex-direction: column;
 }
 
-#navbar ul li {
-  display: flex;
-  flex: 1;
-  margin-left: 0;
+#navbar ul {
+  margin: 0;
 }
 
-#navbar ul {
-  padding-bottom: 2rem;
+#navbar ul li {
+  flex: 1;
+  margin-left: 0;
 }
 
 #contact .contact-infos {
