@@ -162,17 +162,13 @@ img {
   display: inline;
 }
 
+
 .skill p {
   margin: 0;
 }
 
-.skill {
-  display: block;
-  padding: 0.5rem;
-}
-
 #about div {
-  padding: 1rem 2rem;
+  padding: 0.2rem 2rem;
 }
 
 progress {

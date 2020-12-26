@@ -16,7 +16,13 @@
   margin-left: 0;
 }
 
+.progress-bar {
+  display: flex;
+}
 
+.progress-bar progress {
+  margin-right: 1rem;
+}
 
 #contact .contact-infos {
   flex-direction: column-reverse;
