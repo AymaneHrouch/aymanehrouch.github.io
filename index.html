@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="resources/css/style.css" />
+    <link rel="stylesheet" href="resources/css/mixitup.css" />
     <link
       rel="stylesheet"
       media="screen and (max-width: 768px)"
@@ -14,7 +15,41 @@
       href="https://fonts.googleapis.com/css?family=Lato|Staatliches&display=swap"
       rel="stylesheet"
     />
-    <script src="resources/js/script.js"></script>
+
+    <!-- Requirements for portfolio filtering -->
+    <!-- source: https://cutt.us/kt1vq -->
+    <link rel="stylesheet" href="vendors/css/normalize.css" />
+    <link rel="stylesheet" href="vendors/css/layout.css" />
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="vendors/js/jquery.mixitup.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(function () {
+        var filterList = {
+          init: function () {
+            // MixItUp plugin
+            // http://mixitup.io
+            $("#portfoliolist").mixItUp({
+              selectors: {
+                target: ".portfolio",
+                filter: ".filter",
+              },
+              load: {
+                filter: ".web, .mobile, .data",
+              },
+            });
+          },
+        };
+
+        // Run the show!
+        filterList.init();
+      });
+    </script>
     <title>Aymane Hrouch - Full Stack Dev</title>
   </head>
 
@@ -113,7 +148,93 @@
         </p>
       </div>
     </section>
-    <section id="portfolio">Soon ...</section>
+    <section id="portfolio">
+      <ul id="filters" class="clearfix">
+        <li>
+          <span class="filter active" data-filter=".web, .mobile, .data"
+            >All</span
+          >
+        </li>
+        <li><span class="filter" data-filter=".web">Web</span></li>
+        <li><span class="filter" data-filter=".mobile">Mobile</span></li>
+        <li><span class="filter" data-filter=".data">Data</span></li>
+      </ul>
+
+      <div id="portfoliolist">
+        <div class="portfolio web" data-cat="web">
+          <div class="portfolio-wrapper">
+            <img src="https://picsum.photos/500/300" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <a
+                  class="text-title"
+                  href="http://jspractice666.000webhostapp.com/"
+                  target="_blank"
+                  >Whatsapp Backup Reader</a
+                >
+                <span class="text-category">Web</span>
+              </div>
+              <div class="label-bg"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio web" data-cat="web">
+          <div class="portfolio-wrapper">
+            <img src="https://picsum.photos/500/300" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <a
+                  class="text-title"
+                  href="http://ovthinker.herokuapp.com/"
+                  target="_blank"
+                  >Diary Web App</a
+                >
+                <span class="text-category">Web</span>
+              </div>
+              <div class="label-bg"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio mobile" data-cat="mobile">
+          <div class="portfolio-wrapper">
+            <img src="https://picsum.photos/500/300" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <a
+                  class="text-title"
+                  href="http://jspractice666.000webhostapp.com/"
+                  target="_blank"
+                  >Whatsapp Backup Reader</a
+                >
+                <span class="text-category">Example</span>
+              </div>
+              <div class="label-bg"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio data" data-cat="data">
+          <div class="portfolio-wrapper">
+            <img src="https://picsum.photos/500/300" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <a
+                  class="text-title"
+                  href="http://jspractice666.000webhostapp.com/"
+                  target="_blank"
+                  >Example</a
+                >
+                <span class="text-category">Data</span>
+              </div>
+              <div class="label-bg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact">
       <h2>Contact</h2>
       <div class="contact-infos">
@@ -166,5 +287,7 @@
 
     <!--  IonIcons  -->
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!-- MixitUp -->
+    <script src="/vendors/js/mixitup.min.js"></script>
   </body>
 </html>
