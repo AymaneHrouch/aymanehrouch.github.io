@@ -16,6 +16,10 @@
   margin-left: 0;
 }
 
+header .glitch {
+  padding-bottom: 2rem;
+}
+
 #about .skills,
 #about .whoAmI {
   flex: 1;
