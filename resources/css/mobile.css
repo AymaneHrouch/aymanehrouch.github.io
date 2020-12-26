@@ -1,0 +1,30 @@
+.and {
+  display: block;
+  text-align: center;
+}
+
+#about {
+  flex-direction: column;
+}
+
+#navbar ul li {
+  display: flex;
+  flex: 1;
+  margin-left: 0;
+}
+
+#navbar ul {
+  padding-bottom: 2rem;
+}
+
+#contact .contact-infos {
+  flex-direction: column-reverse;
+}
+
+#contact .social-media {
+  background: #ecf0f1;
+}
+
+.other ul li:first-child {
+  padding-top: 0;
+}
