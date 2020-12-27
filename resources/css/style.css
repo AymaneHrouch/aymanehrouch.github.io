@@ -60,6 +60,10 @@ header .text h1 {
   bottom: 0;
 }
 
+section .text {
+  position: relative;
+}
+
 /* NAVBAR */
 
 #navbar {
