@@ -64,8 +64,13 @@ header .text h1 {
   .resume-btn {
     display: none;
   }
+  header .text h3 {
+    display: none;
+  }
+  header {
+    height: 16rem;
+  }
 }
-
 
 /* NAVBAR */
 
