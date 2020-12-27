@@ -1,4 +1,26 @@
 <!DOCTYPE html>
+<?php 
+
+
+
+$handle = fopen("counter.txt", "r");
+if(!$handle){
+ $counter = "error";
+}
+else {
+    $counter = (int ) fread($handle,20);
+	fclose ($handle);
+	
+    if(!isset($_GET['counter'])) {
+    	$counter++;
+        $handle = fopen("counter.txt", "w" );
+        fwrite($handle,$counter) ;
+        fclose ($handle) ;
+    }
+}
+
+?>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -282,7 +304,10 @@
       </div>
     </section>
 
-    <footer>AYMANE HROUCH © 2020</footer>
+    <footer>
+      AYMANE HROUCH © 2020 | visits:
+      <?php echo $counter ?>
+    </footer>
 
     <!--  IonIcons  -->
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
