@@ -60,8 +60,10 @@ header .text h1 {
   bottom: 0;
 }
 
-section .text {
-  position: relative;
+@media only screen and (max-height: 560px) {
+  .resume-btn {
+    display: none;
+  }
 }
 
 /* NAVBAR */
