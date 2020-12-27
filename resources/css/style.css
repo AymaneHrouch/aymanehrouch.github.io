@@ -192,6 +192,7 @@ h4 {
 /* PORTFOLIO */
 
 #portfolio {
+  padding: 1rem 2rem;
   overflow: auto;
   background: #333;
 }
