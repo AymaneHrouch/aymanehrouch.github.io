@@ -261,6 +261,10 @@ h4 {
   display: block;
 }
 
+.other span ion-icon {
+  margin-bottom: -0.2rem;
+}
+
 .social-media ul {
   display: flex;
   text-align: center;
