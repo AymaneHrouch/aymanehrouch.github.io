@@ -60,18 +60,6 @@ header .text h1 {
   bottom: 0;
 }
 
-@media only screen and (max-height: 560px) {
-  .resume-btn {
-    display: none;
-  }
-  header .text h3 {
-    display: none;
-  }
-  header {
-    height: 16rem;
-  }
-}
-
 /* NAVBAR */
 
 #navbar {
@@ -243,6 +231,18 @@ h4 {
   word-spacing: 2px;
   letter-spacing: 1px;
   padding-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 370px) {
+  .other ul li {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  html {
+    font-size: 10px;
+  }
 }
 
 .other ul li > * {
