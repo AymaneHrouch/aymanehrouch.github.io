@@ -60,6 +60,18 @@ header .text h1 {
   bottom: 0;
 }
 
+@media only screen and (max-height: 560px) {
+  .resume-btn {
+    display: none;
+  }
+  header .text h3 {
+    display: none;
+  }
+  header {
+    height: 16rem;
+  }
+}
+
 /* NAVBAR */
 
 #navbar {
