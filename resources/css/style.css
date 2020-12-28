@@ -68,7 +68,8 @@ header .text h1 {
 
 @media only screen and (max-height: 560px) {
   .resume-btn {
-    display: none;
+    padding: 0;
+    
   }
   header .text h3 {
     display: none;

@@ -9,10 +9,21 @@
 
 #navbar ul {
   margin: 0;
+  justify-content: space-between;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+#navbar ul li a:link,
+#navbar ul li a:visited,
+.resume-btn:link,
+.resume-btn:visited {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  padding-bottom: .7rem;
 }
 
 #navbar ul li {
-  flex: 1;
   margin-left: 0;
 }
 
