@@ -33,3 +33,12 @@ header .glitch {
 .other ul li:first-child {
   padding-top: 0;
 }
+
+header .text h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+header .text h3 {
+  font-size: 1.3rem;
+}

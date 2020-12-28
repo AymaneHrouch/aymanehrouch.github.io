@@ -22,6 +22,12 @@ html {
 
 /* HEADER */
 
+.logo {
+  height: 7rem;
+  width: auto;
+}
+
+
 header .text {
   display: flex;
   flex-direction: column;
@@ -68,7 +74,7 @@ header .text h1 {
     display: none;
   }
   header {
-    height: 16rem;
+    height: 23rem;
   }
 }
 
