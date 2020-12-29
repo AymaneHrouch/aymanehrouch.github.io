@@ -266,6 +266,7 @@ h4 {
 
 .other ul li > * {
   display: block;
+  width: max-content;
 }
 
 .other span ion-icon {
