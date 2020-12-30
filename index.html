@@ -1,34 +1,6 @@
-<!DOCTYPE html>
-<?php 
-$handle = fopen("counter.txt", "r");
-if(!$handle){
- $counter = "error";
-}
-else {
-    $counter = (int ) fread($handle,20);
-	fclose ($handle);
-	
-    if(!isset($_GET['counter'])) {
-    	$counter++;
-        $handle = fopen("counter.txt", "w" );
-        fwrite($handle,$counter) ;
-        fclose ($handle) ;
-    }
-    else if($_GET['counter'] == 'reset') {
-        $counter = 0;
-        $handle = fopen("counter.txt", "w" );
-        fwrite($handle,$counter) ;
-        fclose ($handle) ;
-    }
-    else if($_GET['counter'] == -1) {
-    	$counter--;
-        $handle = fopen("counter.txt", "w" );
-        fwrite($handle,$counter) ;
-        fclose ($handle) ;
-    }
-}
+<?php include './tracking/tracker.php' ?>
 
-?>
+<!DOCTYPE html>
 
 <html lang="en">
   <head>
