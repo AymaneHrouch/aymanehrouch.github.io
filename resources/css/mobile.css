@@ -10,8 +10,8 @@
 #navbar ul {
   margin: 0;
   justify-content: space-between;
-  padding-left: .5rem;
-  padding-right: .5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 #navbar ul li a:link,
@@ -20,7 +20,7 @@
 .resume-btn:visited {
   font-size: 1.2rem;
   letter-spacing: 1px;
-  padding-bottom: .7rem;
+  padding-bottom: 0.7rem;
 }
 
 #navbar ul li {
